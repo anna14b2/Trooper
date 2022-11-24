@@ -1,0 +1,85 @@
+@font-face {
+  font-family: "brandon";
+  src: url("fonts/Brandon_reg.otf") format("woff2");
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  /**COLORS**/
+  --green: #657b5a;
+  --orange: #e75b36;
+  --light: #fffdfd;
+  --dark: #040b01;
+
+  /**FONTS**/
+  --main_font: "brandon", sans-serif;
+
+  /**FONT SIZES**/
+  --font-size-sm: 0.75rem;
+  --font-size-base: 1rem;
+  --font-size-m: 1.3rem;
+  --font-size-lg: 1.7rem;
+  --font-size-xl: 2.369rem;
+  --font-size-xxl: 3.157rem;
+  --font-size-xxxl: 4.2rem;
+
+  --font-xs-mobile: 0.694rem;
+  --font-sm-mobile: 0.83rem;
+  --font-base-mobile: 1rem;
+  --font-m-mobile: 1.2rem;
+  --font-lg-mobile: 1.44rem;
+  --font-xl-mobile: 1.728rem;
+  --font-xxl-mobile: 2.07rem;
+
+  /* Spacing */
+  --spacing-10: 0.625rem;
+  --spacing-15: 0.9375rem;
+  --spacing-20: 1.25rem;
+  --spacing-30: 1.875rem;
+  --spacing-40: 2.5rem;
+  --spacing-50: 3rem;
+  --spacing-60: 3.8rem;
+  --spacing-70: 4.3rem;
+  --spacing-80: 5rem;
+  --spacing-90: 7.5rem;
+  --spacing-100: 10rem;
+
+  --spacing-xxxl: 25rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--light);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr minmax(0, 1200px) 1fr;
+  overflow: hidden;
+}
+
+main > section {
+  grid-column: 2/3;
+}
+
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  font-family: var(--main_font);
+}
