@@ -16,21 +16,13 @@
   --main_font: "brandon", sans-serif;
 
   /**FONT SIZES**/
-  --font-size-sm: 0.75rem;
-  --font-size-base: 1rem;
-  --font-size-m: 1.3rem;
-  --font-size-lg: 1.7rem;
-  --font-size-xl: 2.369rem;
-  --font-size-xxl: 3.157rem;
-  --font-size-xxxl: 4.2rem;
-
-  --font-xs-mobile: 0.694rem;
-  --font-sm-mobile: 0.83rem;
-  --font-base-mobile: 1rem;
-  --font-m-mobile: 1.2rem;
-  --font-lg-mobile: 1.44rem;
-  --font-xl-mobile: 1.728rem;
-  --font-xxl-mobile: 2.07rem;
+  --font-size-sm: clamp(0.69rem, 0.11vw + 0.66rem, 0.75rem);
+  --font-size-base: clamp(0.81rem, 0.34vw + 0.73rem, 1rem); 
+  --font-size-m: --font-size-base: clamp(1rem, 0.57vw + 0.86rem, 1.31rem);
+  --font-size-lg: clamp(1.19rem, 1.02vw + 0.93rem, 1.75rem);
+  --font-size-xl: clamp(1.44rem, 1.59vw + 1.04rem, 2.31rem);
+  --font-size-xxl: clamp(1.69rem, 2.61vw + 1.03rem, 3.13rem);
+  --font-size-xxxl: clamp(2.06rem, 3.86vw + 1.1rem, 4.19rem);
 
   /* Spacing */
   --spacing-10: 0.625rem;
@@ -83,3 +75,52 @@ p,
 a {
   font-family: var(--main_font);
 }
+
+.btn {
+  border-radius: 5px;
+  padding: var(--spacing-10) var(--spacing-40);
+  max-width: 300px;
+  border: none;
+  font-size: var(--font-size-base);
+  transition: all 0.2s;
+  background-color: var(--green);
+  color: var(--light);
+}
+
+h1,
+.h1 {
+  font-size: var(--font-size-xxxl);
+}
+
+h2,
+.h2 {
+  font-size: var(--font-size-xxl);
+}
+
+h3,
+.h3 {
+  font-size: var(--font-size-xl);
+}
+
+h4,
+.h4 {
+  font-size: var(--font-size-lg);
+}
+
+p,
+.p {
+  font-size: var(--font-size-base);
+}
+
+.pl {
+  font-size: var(--font-size-m);
+}
+
+.ps {
+  font-size: var(--font-size-sm);
+}
+
+main {
+  display: block;
+}
+
