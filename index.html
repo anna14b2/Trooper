@@ -9,8 +9,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header></header>
+    <header>
+      <figure class="logo">
+        <a href="index.html"><img src="img/TROOPERLOGO.svg" alt="logo" /></a>
+      </figure>
+      <nav class="navigation">
+        <ul>
+          <li><a href="">Services</a></li>
+          <li><a href="">Cases</a></li>
+          <li><a href="">About trooper</a></li>
+          <li><button class="btn">Contact us</button></li>
+        </ul>
+
+        <!-- BURGER MENU -->
+        <button type="button" class="burger" id="menu-btn" name>
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+        </button>
+      </nav>
+
+      <!-- MOBILE MENU  -->
+      <div class="mobile-menu hidden" id="menu">
+        <ul>
+          <a href=""><li>Services</li></a>
+          <a href=""><li>Cases</li></a>
+          <a href=""><li>About Trooper</li></a>
+          <li><button class="btn">Contact us</button></li>
+        </ul>
+      </div>
+    </header>
     <main></main>
     <footer></footer>
+    <script src="index.js"></script>
   </body>
 </html>
