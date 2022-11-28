@@ -79,6 +79,10 @@ a {
   color: var(--orange);
 }
 
+.green {
+  color: var(--green);
+}
+
 .btn {
   border-radius: 5px;
   padding: var(--spacing-15) var(--spacing-30);
@@ -89,6 +93,7 @@ a {
   color: var(--light);
   text-transform: uppercase;
   cursor: pointer;
+  max-width: 300px;
 }
 
 h1,
@@ -313,10 +318,6 @@ nav li {
   margin-bottom: var(--spacing-40);
 }
 
-.hero .top {
-  animation-name: logo;
-  animation-duration: 10s;
-}
 
 .lines {
   display: flex;
@@ -338,18 +339,49 @@ nav li {
 }
 }
 
+.lines {
+  margin-left: -7rem;
+  height: 50%;
+  width: auto;
+  margin-top: var(--spacing-70);
+  margin-bottom: var(--spacing-70);
+  
+}
+
+.headline {
+  margin-top: var(--spacing-90);
+  margin-bottom: var(--spacing-70);
+  margin-left: -7rem;
+  z-index: 1;
+}
+
+.headline h4 {
+  margin-top: var(--spacing-10);
+  margin-bottom: var(--spacing-60);
+}
+
+
 
 /* section 2  */
 
-#section2{
+#section2 {
   display: flex;
-  margin: var(--spacing-40);
+  margin-top: var(--spacing-80);
+  margin-bottom: var(--spacing-90);
+  margin-right: var(--spacing-10);
+}
+
+#section2 h4 {
+  
+  margin-top: var(--spacing-20);
+  z-index: 1;
+  
 }
 
 #section2 .lines_s2 {
-  margin-top: var(--spacing-20);
+  
   margin-right: var(--spacing-15);
-  margin-left: -5rem;
+  margin-left: -4rem;
   width: 100vw;
 }
 
@@ -372,8 +404,12 @@ nav li {
 /*Section 3 */
 
 .cases {
-  display: flex;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: var(--spacing-30);
+  align-items: center;
+  justify-content: space-between;
+  
 }
 
 .cases a {
@@ -384,16 +420,101 @@ nav li {
 .case_anne {
   background: url(img/case_anne.png);
   padding-top: var(--spacing-xxl);
-  color: white;
   padding-left: var(--spacing-20);
+  width: 100%;
+  background-repeat: no-repeat;
+  margin: var(--spacing-10);
+  padding-left: var(--spacing-20);
+
 }
 
-.case_anne h4, .case_anne p, .case_anne a {
+.cases h4, .cases p, .cases a {
   color: var(--light);
   padding: var(--spacing-01);
   
 }
 
-.case_anne img {
+.cases .background_img {
   padding-left: var(--spacing-01);
+  padding-bottom: var(--spacing-10);
 }
+
+.case_mend {
+  background: url(img/case_mend.png);
+  padding-top: var(--spacing-xxl);
+  width: 100%;
+  background-repeat: no-repeat;
+  margin: var(--spacing-10);
+  padding-left: var(--spacing-20);
+
+}
+
+.case_artnordic {
+  background: url(img/case_artnordic.png);
+  padding-top: var(--spacing-xxl);
+  width: 100%;
+  background-repeat: no-repeat;
+  margin: var(--spacing-10);
+  padding-left: var(--spacing-20);
+}
+
+
+/* Section 5 */
+
+@media (min-width: 700px) {
+
+  #section5 {
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    grid-gap: var(--spacing-60);
+    margin-top: var(--spacing-50);
+  }
+
+}
+
+#section5 img {
+  margin: var(--spacing-30);
+}
+
+#section5 article {
+  margin-top: var(--spacing-70);
+  margin-right: var(--spacing-90);
+}
+
+#section5 p {
+  margin-top: var(--spacing-30);
+  margin-bottom: var(--spacing-50);
+}
+
+
+
+/* conntact us */
+
+#conntactus {
+  display: flex;
+  margin: var(--spacing-30);
+  margin-top: var(--spacing-90);
+}
+
+#conntactus figure {
+  margin-top: var(--spacing-50);
+  margin-right: var(--spacing-20);
+}
+
+.conntact_form {
+  display: flex;
+  flex-direction: column;
+}
+
+#conntactus input {
+  border-radius: 5px;
+  border: none;
+  padding-bottom: var(--spacing-15);
+  padding-top: var(--spacing-15);
+  padding-left: var(--spacing-15);
+  padding-right: var(--spacing-50);
+  margin: var(--spacing-10);
+ 
+  box-shadow: 1px 1px 1px 2px rgba(20,10,10,0.2);
+}
+
