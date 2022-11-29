@@ -622,3 +622,77 @@ nav li {
   margin-left: var(--spacing-40);
   max-width: 70vw;
 }
+
+#about_section2 {
+  display: flex;
+  flex-direction: row;
+  margin-left: var(--spacing-90);
+  margin-right: var(--spacing-100);
+  margin-top: var(--spacing-xxl);
+}
+
+#about_section2 p {
+  margin-top: var(--spacing-40);
+  padding-left: var(--spacing-100);
+
+  margin-right: var(--spacing-15);
+}
+
+.approach {
+  margin-right: -2rem;
+}
+
+#about_section4 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 5rem;
+  margin: var(--spacing-90);
+} 
+
+#about_section4 article {
+  margin-top: var(--spacing-90);
+  padding-right: var(--spacing-80);
+}
+
+#about_section4 article p {
+  margin-top: var(--spacing-20);
+}
+
+/*employees*/
+#about_section5 {
+  margin: var(--spacing-50);
+}
+
+#about_section5 h3 {
+  display: flex;
+  place-content: center;
+  margin-bottom: var(--spacing-70);
+}
+
+.teamGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 3rem;
+}
+
+#about_section5 .employee  {
+  position: relative;
+  
+}
+
+
+#about_section5 .employee .name {
+  position: absolute;
+  margin-top: var(--spacing-xxxl);
+  padding-top: var(--spacing-50);
+  margin-left: var(--spacing-20);
+}
+
+#about_section5 h2, #about_section5 h4 {
+  color: var(--light);
+} 
+
+#about_section5 .employee img {
+  width: 100%;
+  height: auto;
+}
