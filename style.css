@@ -183,12 +183,21 @@ nav li {
   background-color: var(--dark);
 }
 
-.header_dark .btn {
+.header_light {
+  background-color: var(--light);
+}
+
+.header_dark .btn,
+.header_light .btn {
   margin-top: -0.5rem;
 }
 
 .navigation_dark a {
   color: var(--light);
+}
+
+.navigation_light a {
+  color: var(--dark);
 }
 
 
@@ -598,3 +607,18 @@ nav li {
   margin-right: var(--spacing-xxl);
 }
 
+
+
+/*** ABOUT PAGE ****/
+
+#about_hero {
+  display: flex;
+  margin-top: var(--spacing-70);
+  margin-left: var(--spacing-100);
+}
+
+.about_headline {
+  margin-top: var(--spacing-40);
+  margin-left: var(--spacing-40);
+  max-width: 70vw;
+}
