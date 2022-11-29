@@ -229,23 +229,36 @@ nav li {
   transition: all 0.5s;
 }
 
-.burger-middle {
+.burger-top-dark,
+.burger-middle-dark,
+.burger-bottom-dark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 28px;
+  height: 2px;
+  background-color: var(--dark);
+  transform: rotate(0);
+  transition: all 0.5s;
+}
+
+.burger-middle, .burger-middle-dark {
   transform: translateY(7px);
 }
 
-.burger-bottom {
+.burger-bottom, .burger-bottom-dark {
   transform: translateY(14px);
 }
 
-.open .burger-top {
+.open .burger-top, .open .burger-top-dark {
   transform: rotate(45deg) translateY(6px) translateX(6px);
 }
 
-.open .burger-middle {
+.open .burger-middle, .open .burger-middle-dark {
   display: none;
 }
 
-.open .burger-bottom {
+.open .burger-bottom, .open .burger-bottom-dark {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
