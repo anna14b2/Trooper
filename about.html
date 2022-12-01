@@ -44,7 +44,9 @@
 
     <main>
       <section id="about_hero">
-        <figure><img src="img/lines-orange.svg" alt="Lines" /></figure>
+        <figure class="lines">
+          <img src="img/lines-orange.svg" alt="Lines" />
+        </figure>
         <div class="about_headline">
           <h4 class="pl">ABOUT TROOPER</h4>
           <h1>A COPENHAGEN BASED DIGITAL AGENCY</h1>
@@ -84,26 +86,21 @@
         </article>
         <img src="img/Loa&gitte.jpg" alt="" />
       </section>
-
+      <h3 class="team_heading">WE ARE THE TEAM BEHIND TROOPER</h3>
       <section id="about_section5">
-        <h3>HELLO, WE ARE THE TEAM BEHIND TROOPER</h3>
-        <div class="teamGrid">
+        <template class="template">
           <div class="employee">
             <div class="name">
-              <h2>Name of employee</h2>
-              <h4>Worktitle</h4>
+              <h3 class="light">Name of employee</h3>
+              <h4 class="light pl">Worktitle</h4>
             </div>
-            <img src="img/Loa&gitte.jpg" alt="" />
+            <img class="employeeimg" src="#" alt="" />
           </div>
-          <div class="employee">
-            <div class="name">
-              <h2>Name of employee</h2>
-              <h4>Worktitle</h4>
-            </div>
-            <img src="img/Loa&gitte.jpg" alt="" />
-          </div>
-        </div>
+        </template>
       </section>
     </main>
+
+    <script src="script.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>
