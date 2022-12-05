@@ -5,6 +5,10 @@
   font-style: normal;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 :root {
   /**COLORS**/
   --green: #657b5a;
@@ -334,8 +338,6 @@ footer {
 .flex_row {
   display: flex;
   flex-direction: row;
-  margin-top: var(--spacing-20);
-  margin-bottom: var(--spacing-10);
 }
 
 .width15 {
@@ -509,7 +511,7 @@ footer {
   justify-content: center;
   font-family: var(--main_font);
   font-size: var(--font-size-sm);
-  margin-top: -5rem;
+  margin-top: -7rem;
   margin-bottom: 10rem;
   transform: rotate(270deg);
 }
@@ -971,12 +973,18 @@ footer {
   display: flex;
 }
 
+#cases_hero figure {
+  width: 150%;
+  margin-top: var(--spacing-70);
+  margin-left: -7rem;
+}
+
 .cases_headline {
   margin-top: var(--spacing-70);
-  margin-right: var(--spacing-100);
-  margin-bottom: var(--spacing-80);
-  margin-left: var(--spacing-100);
-  padding-right: var(--spacing-100);
+  margin-right: var(--spacing-15);
+
+  margin-bottom: var(--spacing-70);
+  z-index: 1;
 }
 
 .cases_headline h1 {
@@ -990,13 +998,93 @@ footer {
 
 .case_info {
   position: absolute;
-  margin-top: var(--spacing-90);
+  margin-top: var(--spacing-100);
+  margin-left: var(--spacing-20);
 }
 
 .case_grid {
-  grid-template-columns: repeat(a);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: var(--spacing-30);
 }
 
+.cases_category {
+  margin-left: var(--spacing-50);
+  margin-top: var(--spacing-80);
+}
+
+#cases_section2 p {
+  margin-left: var(--spacing-50);
+  margin-bottom: var(--spacing-30);
+}
+
+.green_box {
+  width: 25vw;
+  height: 10vw;
+  background: var(--green);
+  border-radius: 5px;
+  margin-bottom: -2rem;
+  margin-left: var(--spacing-50);
+}
+
+.green_box_bottom {
+  width: 25vw;
+  height: 15vw;
+  background: var(--green);
+  border-radius: 5px;
+  margin-top: -2rem;
+  margin-left: var(--spacing-50);
+}
+
+.flex_row:hover {
+  margin-left: var(--spacing-01);
+  animation-duration: s;
+}
+
+@media (min-width: 800px) {
+  .cases_headline {
+    margin-top: var(--spacing-70);
+    margin-right: var(--spacing-100);
+    margin-bottom: var(--spacing-100);
+    padding-right: var(--spacing-100);
+  }
+  #cases_hero figure {
+    width: 30%;
+    margin-top: var(--spacing-30);
+  }
+  .case_grid {
+    grid-gap: 0;
+    margin: 0;
+  }
+
+  .case_info {
+    margin-top: var(--spacing-xxxl);
+    margin-left: var(--spacing-50);
+  }
+
+  .cases_category {
+    margin-left: var(--spacing-80);
+    margin-top: var(--spacing-90);
+  }
+  #cases_section2 p {
+    margin-left: var(--spacing-80);
+    margin-top: var(--spacing-30);
+    margin-right: 35rem;
+  }
+
+  .green_box {
+    margin-left: var(--spacing-80);
+    height: 6vw;
+    width: 20vw;
+    margin-bottom: -2rem;
+  }
+  .green_box_bottom {
+    width: 20vw;
+    height: 9vw;
+    margin-top: -2rem;
+    margin-left: var(--spacing-80);
+  }
+}
 /******* SERVICES / BRAND *******/
 
 .brand_headline h1 {
