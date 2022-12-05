@@ -1,0 +1,12 @@
+<svg width="148" height="148" viewBox="0 0 148 148" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect x="73" width="2" height="148" fill="#E75B36"/>
+<rect y="76" width="2" height="148" transform="rotate(-90 0 76)" fill="#E75B36"/>
+<line x1="73.8888" y1="0.616704" x2="59.7872" y2="18.6167" stroke="#E75B36" stroke-width="2"/>
+<line x1="88.3154" y1="18.6167" x2="74.2126" y2="0.616755" stroke="#E75B36" stroke-width="2"/>
+<line x1="74.2128" y1="147.383" x2="88.3144" y2="129.383" stroke="#E75B36" stroke-width="2"/>
+<line x1="59.7872" y1="129.383" x2="73.89" y2="147.383" stroke="#E75B36" stroke-width="2"/>
+<line x1="0.616704" y1="75.2128" x2="18.6167" y2="89.3144" stroke="#E75B36" stroke-width="2"/>
+<line x1="18.6167" y1="60.7872" x2="0.616755" y2="74.89" stroke="#E75B36" stroke-width="2"/>
+<line x1="147.383" y1="74.8888" x2="129.383" y2="60.7872" stroke="#E75B36" stroke-width="2"/>
+<line x1="129.383" y1="89.3156" x2="147.383" y2="75.2128" stroke="#E75B36" stroke-width="2"/>
+</svg>
