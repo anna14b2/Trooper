@@ -407,7 +407,7 @@ footer {
 }
 
 footer p {
-  padding: var(--spacing-01);
+  padding: var(--spacing-10);
 }
 
 .footer_box3 {
@@ -832,6 +832,9 @@ footer p {
   }
   .contribute_item h4 {
     font-size: var(--font-size-m);
+  }
+  .section4_headline {
+    margin: var(--spacing-30) 0;
   }
 }
 
