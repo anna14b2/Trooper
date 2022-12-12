@@ -210,6 +210,10 @@ nav li {
   color: var(--dark);
 }
 
+.navigation_light .btn {
+  color: var(--light);
+}
+
 /*BURGER MENU*/
 .burger {
   cursor: pointer;
