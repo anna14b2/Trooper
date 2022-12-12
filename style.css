@@ -401,9 +401,10 @@ footer {
 }
 
 .width15 {
-  width: 5vw;
-  height: 4vw;
+  width: 18%;
+  height: 18%;
   margin-right: var(--spacing-15);
+  margin-bottom: var(--spacing-10);
 }
 
 footer p {
