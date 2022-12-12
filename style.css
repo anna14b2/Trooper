@@ -1228,3 +1228,12 @@ footer {
   flex-direction: column;
   text-align: center;
 }
+
+/**CASE PAGE**/
+
+#case_page {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: var(--spacing-100);
+}
