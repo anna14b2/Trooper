@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About Trooper</title>
+    <meta name="robots" content="noindex" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header_dark">
+      <figure class="logo">
+        <a href="index.html"
+          ><img src="img/TROOPERLOGOWHITE.svg" alt="logo"
+        /></a>
+      </figure>
+      <nav class="navigation navigation_dark">
+        <ul>
+          <li><a href="brand.html">Services</a></li>
+          <li><a href="cases.html">Cases</a></li>
+          <li><a href="about.html">About trooper</a></li>
+          <li>
+            <a href="#conntactus"> <button class="btn">Contact us</button></a>
+          </li>
+        </ul>
+
+        <!-- BURGER MENU -->
+        <button type="button" class="burger" id="menu-btn" name>
+          <span class="burger-top"></span>
+          <span class="burger-middle"></span>
+          <span class="burger-bottom"></span>
+        </button>
+      </nav>
+
+      <!-- MOBILE MENU  -->
+      <div class="mobile-menu hidden" id="menu">
+        <ul>
+          <a href="brand.html"><li>Services</li></a>
+          <a href="cases.html"><li>Cases</li></a>
+          <a href="about.html"><li>About Trooper</li></a>
+        </ul>
+      </div>
+    </header>
+
+    <!-- MAIN  -->
+
+    <main class="main_employee">
+      <a href="about.html#about_section4" class="underline">Go back</a>
+      <section class="the_employee">
+        <figure>
+          <img id="employee_img" src="#" alt="#" />
+        </figure>
+        <article>
+          <h4>Hello there I am a Trooper, and my name is</h4>
+          <h2>Name</h2>
+          <h3>Title</h3>
+          <p>Long text</p>
+        </article>
+      </section>
+    </main>
+    <section id="conntactus">
+        <figure><img src="img/lines-green.svg" alt="" /></figure>
+        <div class="forms">
+          <h4 class="pl">CONNTACT ME</h4>
+          <h3>
+            SEND ME A MESSAGE AND WE CAN HAVE A CHAT
+          </h3>
+          <div class="conntact_form">
+            <input
+              class="first_conntact"
+              type="text"
+              name="subject"
+              placeholder="What do you want to talk about?"
+            />
+
+            <div>
+              <input
+                class="second_conntact"
+                type="text"
+                name="fullname"
+                placeholder="Your full name*"
+              />
+              <input
+                class="second_conntact"
+                type="text"
+                name="company"
+                placeholder="Company name"
+              />
+            </div>
+            <div>
+              <input
+                class="second_conntact"
+                type="email"
+                name="email"
+                placeholder="Email address*"
+              />
+              <input
+                class="second_conntact"
+                type="text"
+                name="phonenumber"
+                placeholder="Phone number"
+              />
+            </div>
+          </div>
+          <button class="btn">Send</button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="footer_box1">
+        <p class="light">CONNTACT</p>
+        <div class="flex_row">
+          <img class="width15" src="img/icon_whitephone.svg" alt="phone" />
+          <p class="light">+ 45 81610000</p>
+        </div>
+        <div class="flex_row">
+          <img class="width15" src="img/icon_whitemail.svg" alt="mail" />
+          <p class="light">kontakt@trooper.dk</p>
+        </div>
+      </div>
+      <div class="footer_box2">
+        <p class="light">OUR LOCATION</p>
+        <div class="flex_row">
+          <img class="width15" src="img/icon_whitehouse.svg" alt="phone" />
+          <p class="light">Bygmestervej 6 <br />2400 København NV</p>
+        </div>
+      </div>
+      <div class="footer_box3">
+        <p class="light">SIGN UP FOR OUR NEWSLETTER</p>
+
+        <p class="light">Email*</p>
+
+        <input
+          class="second_conntact"
+          type="email"
+          name="email"
+          placeholder="Email address*"
+        />
+        <button class="btn">Sign me up!</button>
+      </div>
+      <div>
+        <img src="img/trooperred.svg" alt="" />
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>

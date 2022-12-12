@@ -38,9 +38,16 @@ function showEmploye(employee) {
   const template = document.querySelector(".template").content;
   //clone it
   const clone = template.cloneNode(true);
+
+  //make the place page match the place we are gonna click
+  clone
+    .querySelector("a")
+    .setAttribute("href", "employee.html?employee=" + employee.name);
+
   //populate with data
   clone.querySelector("h3").textContent = employee.name;
   clone.querySelector("h4").textContent = employee.worktitle;
+
   clone.querySelector("img").setAttribute("src", employee.imgmain);
   clone.querySelector("img").setAttribute("alt", employee.name);
 

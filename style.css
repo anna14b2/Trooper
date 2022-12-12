@@ -280,7 +280,7 @@ nav li {
   transform: rotate(-45deg) translateY(6px) translateX(-6px);
 }
 
-@media screen and (max-width: 760px) {
+@media screen and (max-width: 900px) {
   .burger {
     display: block;
   }
@@ -778,8 +778,10 @@ footer {
 
 #conntactus {
   display: flex;
+
   margin: var(--spacing-30);
-  margin-top: var(--spacing-90);
+  margin-top: var(--spacing-50);
+  margin-bottom: var(--spacing-50);
 }
 
 #conntactus h3,
@@ -790,6 +792,9 @@ footer {
 
 #conntactus figure {
   width: 0%;
+  animation-name: totheleft;
+  animation-duration: 25s;
+  animation-iteration-count: infinite;
 }
 
 .first_conntact {
@@ -819,6 +824,11 @@ footer {
 }
 
 @media (min-width: 1200px) {
+  #conntactus {
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+  }
+
   #conntactus h3,
   #conntactus h4 {
     margin-right: var(--spacing-90);
@@ -826,7 +836,7 @@ footer {
 
   #conntactus figure {
     margin-top: var(--spacing-90);
-    width: 60vw;
+    width: 100%;
   }
 
   .forms {
@@ -888,7 +898,7 @@ footer {
 
 #about_section5 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
   grid-gap: var(--spacing-10);
   margin-left: var(--spacing-20);
   margin-right: var(--spacing-10);
@@ -905,9 +915,10 @@ footer {
   margin-left: var(--spacing-10);
 }
 
-.employeeimg {
-  max-width: 40vw;
-  height: 50vw;
+.minus_margin {
+  margin-top: -5rem;
+  margin-bottom: 5rem;
+  margin-left: var(--spacing-20);
 }
 
 @media (min-width: 700px) {
@@ -915,6 +926,10 @@ footer {
     grid-gap: 1rem;
     margin-left: var(--spacing-90);
     margin-right: var(--spacing-90);
+  }
+  .employeeimg {
+    max-width: 40vw;
+    height: 50vw;
   }
   .name {
     margin-top: var(--spacing-90);
@@ -1240,4 +1255,28 @@ footer {
   flex-direction: column;
   text-align: center;
   margin-top: var(--spacing-100);
+}
+
+/* EMPLOYEE SITE */
+.main_employee {
+  margin: var(--spacing-30);
+}
+.the_employee {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: var(--spacing-70);
+  margin: var(--spacing-30);
+}
+
+.the_employee article {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.underline {
+  text-decoration: underline;
+  color: var(--green);
+  margin: var(--spacing-80);
+  margin-top: var(--spacing-90);
 }
