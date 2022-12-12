@@ -40,7 +40,7 @@ html {
   --spacing-70: 4.3rem;
   --spacing-80: 5rem;
   --spacing-90: 7.5rem;
-  --spacing-100: 12rem;
+  --spacing-100: 10rem;
   --spacing-xxl: 15rem;
   --spacing-xxxl: 20rem;
 }
@@ -394,6 +394,7 @@ footer {
   display: flex;
   flex-direction: row;
   background-color: var(--dark);
+  padding: var(--spacing-15);
 }
 
 .hero .middle {
@@ -476,28 +477,29 @@ footer {
   display: flex;
   flex-direction: column;
   animation-name: totheleft;
-  animation-duration: 20s;
+  animation-duration: 25s;
   animation-iteration-count: infinite;
 }
 
 @keyframes totheleft {
   0% {
-    transform: translateX(-10vw);
+    transform: translateX(-5vw);
   }
   50% {
     transform: translateX(0vw);
   }
   100% {
-    transform: translateX(-10vw);
+    transform: translateX(-5vw);
   }
 }
 
 .headline {
   margin-top: var(--spacing-80);
   margin-bottom: var(--spacing-70);
-  margin-right: var(--spacing-10);
+  margin-right: var(--spacing-30);
   z-index: 1;
   margin-left: -14rem;
+  float: right;
 }
 
 .headline h4 {
@@ -996,6 +998,11 @@ footer {
   position: relative;
 }
 
+.overlay img {
+  height: 45vw;
+  width: 100%;
+}
+
 .case_info {
   position: absolute;
   margin-top: var(--spacing-100);
@@ -1011,6 +1018,20 @@ footer {
 .cases_category {
   margin-left: var(--spacing-50);
   margin-top: var(--spacing-80);
+}
+
+.flex_row .background_img {
+  margin-left: var(--spacing-10);
+}
+
+.flex_row .background_img:hover {
+  margin-left: var(--spacing-20);
+  cursor: pointer;
+}
+
+.flex_row a:hover {
+  margin-right: var(--spacing-20);
+  cursor: pointer;
 }
 
 #cases_section2 p {
@@ -1034,11 +1055,6 @@ footer {
   border-radius: 5px;
   margin-top: -2rem;
   margin-left: var(--spacing-50);
-}
-
-.flex_row:hover {
-  margin-left: var(--spacing-01);
-  animation-duration: s;
 }
 
 @media (min-width: 800px) {
@@ -1191,5 +1207,24 @@ footer {
   margin-top: var(--spacing-40);
   display: flex;
   place-content: center;
+  text-align: center;
+}
+
+#brand_section7 h3 {
+  display: flex;
+  place-content: center;
+  margin-top: var(--spacing-90);
+}
+
+#brand_section7 article {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: var(--spacing-50);
+  margin: var(--spacing-70);
+}
+
+.branding_process {
+  display: flex;
+  flex-direction: column;
   text-align: center;
 }
