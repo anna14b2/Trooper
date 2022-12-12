@@ -980,7 +980,7 @@ footer {
 }
 
 #cases_hero figure {
-  width: 150%;
+  width: 100%;
   margin-top: var(--spacing-70);
   margin-left: -7rem;
 }
@@ -1063,13 +1063,13 @@ footer {
 
 @media (min-width: 800px) {
   .cases_headline {
-    margin-top: var(--spacing-70);
+    margin-top: var(--spacing-90);
     margin-right: var(--spacing-100);
     margin-bottom: var(--spacing-100);
     padding-right: var(--spacing-100);
   }
   #cases_hero figure {
-    width: 30%;
+    width: 25%;
     margin-top: var(--spacing-30);
   }
   .case_grid {
