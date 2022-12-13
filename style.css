@@ -104,12 +104,13 @@ a {
   background-color: var(--green);
   color: var(--light);
   text-transform: uppercase;
-  cursor: pointer;
+
   max-width: 300px;
 }
 
 .btn:hover {
   background-color: var(--hover-green);
+  cursor: pointer;
 }
 
 a:hover {
@@ -153,6 +154,9 @@ a {
   text-decoration: none;
   color: var(--dark);
   text-transform: uppercase;
+}
+
+a:hover {
   cursor: pointer;
 }
 
@@ -991,6 +995,12 @@ footer p {
   margin-left: var(--spacing-20);
 }
 
+.employeeimg:hover {
+  border: 5px solid #040b0188;
+  cursor: pointer;
+  transition: 5ms;
+}
+
 @media (min-width: 700px) {
   #about_section5 {
     grid-gap: 1rem;
@@ -1001,6 +1011,7 @@ footer p {
     max-width: 40vw;
     height: 50vw;
   }
+
   .name {
     margin-top: var(--spacing-90);
     padding-top: var(--spacing-100);
