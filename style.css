@@ -1124,6 +1124,11 @@ footer p {
   cursor: pointer;
 }
 
+.flex_row p:hover {
+  margin-right: var(--spacing-20);
+  cursor: pointer;
+}
+
 .flex_row a:hover {
   margin-right: var(--spacing-20);
   cursor: pointer;
