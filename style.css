@@ -984,7 +984,7 @@ footer p {
 
 .name {
   position: absolute;
-  margin-top: var(--spacing-80);
+  margin-top: var(--spacing-xxxl);
   padding-top: var(--spacing-80);
   margin-left: var(--spacing-10);
 }
@@ -1374,6 +1374,7 @@ footer p {
 .main_employee {
   margin: var(--spacing-30);
 }
+
 .the_employee {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
